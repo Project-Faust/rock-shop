@@ -1,41 +1,41 @@
-# Node.js dependencies
-/node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Build directories
-/build/
-/dist/
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Logs
-*.log
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# Environment files
-.env
-.env.local
-.env.*.local
+# env files (can opt-in for committing if needed)
+.env*
 
-# IDE
-.vscode/
+# vercel
+.vercel
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-/coverage
-
-# npm package lock file (if you don't want to track it)
-# package-lock.json
-
-# Frontend build directories (if applicable)
-client/build/
-/client/dist/
-
-# Ignore client-side dependencies if in a separate folder (for example, if frontend is in `client` directory)
-client/node_modules/
-
-# .env files for both backend and frontend
-# .env.production
-# .env.development
+# typescript
+*.tsbuildinfo
+next-env.d.ts
